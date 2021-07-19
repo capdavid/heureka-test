@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from 'next/head'
 
 export default function Home() {
   return (
@@ -12,5 +12,5 @@ export default function Home() {
         <h1 className="text-xl text-red-500">Styles test</h1>
       </main>
     </>
-  );
+  )
 }
