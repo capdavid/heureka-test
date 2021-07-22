@@ -1,0 +1,891 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Xiaomi Redmi Note 8 Pro 6GB/128GB",
+      "price": 5790,
+      "imageUrl": "https://im9.cz/iR/importprodukt-orig/582/582f717d7062d0b73c0e96eaeb3eb319--mmf400x400.jpg",
+      "description": "Prostorný displej, čtyřnásobný fotoaparát, výkonný herní procesor, 4500mAh baterie a na pohled i dotek příjemný design – nejen to vám nabídne tento nadupaný mobilní telefon. Prostorný displej, čtyřnásobný fotoaparát, výkonný herní procesor, 4500mAh baterie a na pohled i dotek příjemný design – nejen to vám nabídne tento nadupaný mobilní telefon. Prostorný displej, čtyřnásobný fotoaparát, výkonný herní procesor, 4500mAh baterie a na pohled i dotek příjemný design – nejen to vám nabídne tento nadupaný mobilní telefon.",
+      "attributes": [
+        {
+          "text": "dotykové",
+          "description": "Konstrukce"
+        },
+        {
+          "text": "Android",
+          "description": "Operační systém"
+        },
+        {
+          "text": "Android 9.0 (Pie)",
+          "description": "Verze operačního systému"
+        },
+        {
+          "text": "6144 MB",
+          "description": "Paměť RAM"
+        },
+        {
+          "text": "128 GB",
+          "description": "Uživatelská paměť"
+        },
+        {
+          "text": "6.53 \"",
+          "description": "Velikost displeje"
+        }
+      ],
+      "tags": {
+        "os": [
+          {
+            "id": 1,
+            "value": "android"
+          }
+        ],
+        "hdd": [
+          {
+            "id": 2,
+            "value": "128"
+          }
+        ],
+        "brand": [
+          {
+            "id": 1,
+            "value": "xiamoi"
+          }
+        ]
+      },
+      "shopsCount": 118,
+      "url": "https://m.heureka.cz/mobilni-telefony/xiaomi-redmi-note-8-pro-6gb-128gb/",
+      "rating": 96,
+      "topBadge": 1
+    },
+    {
+      "id": 2,
+      "name": "Xiaomi Redmi Note 8T 4GB/64GB",
+      "price": 4300,
+      "imageUrl": "https://im9.cz/iR/importprodukt-orig/508/508de3be6718f9ba6b625b23a19242f8--mmf400x400.jpg",
+      "description": "Inteligentní elegán, který zvládne všechny vaše požadavky levou zadní. Vyzkoušejte si například focení se čtyřmi objektivy, šetrný displej nebo opravdu špičkové reproduktory.",
+      "attributes": [
+        {
+          "text": "dotykové",
+          "description": "Konstrukce"
+        },
+        {
+          "text": "Android",
+          "description": "Operační systém"
+        },
+        {
+          "text": "Android 9.0 (Pie)",
+          "description": "Verze operačního systému"
+        },
+        {
+          "text": "4096 MB",
+          "description": "Paměť RAM"
+        },
+        {
+          "text": "64 GB",
+          "description": "Uživatelská paměť"
+        },
+        {
+          "text": "6.3 \"",
+          "description": "Velikost displeje"
+        }
+      ],
+      "tags": {
+        "os": [
+          {
+            "id": 1,
+            "value": "android"
+          }
+        ],
+        "hdd": [
+          {
+            "id": 1,
+            "value": "64"
+          }
+        ],
+        "brand": [
+          {
+            "id": 1,
+            "value": "xiamoi"
+          }
+        ]
+      },
+      "shopsCount": 120,
+      "url": "https://m.heureka.cz/mobilni-telefony/xiaomi-redmi-note-8t-4gb-64gb/",
+      "rating": 93,
+      "topBadge": 2
+    },
+    {
+      "id": 3,
+      "name": "Apple iPhone SE (2020) 64GB",
+      "price": 12630,
+      "imageUrl": "https://im9.cz/iR/importprodukt-orig/8a3/8a3ed550cf052a592b3805a1cb1b2c32--mmf400x400.jpg",
+      "description": "Vysoce výkonný čipset, pokročilý fotoaparát s portrétním nasvícením i bezdrátové nabíjení. To vše nabízí tento dostupný iPhone s voděodolným designem a Retina HD displejem.",
+      "attributes": [
+        {
+          "text": "dotykové",
+          "description": "Konstrukce"
+        },
+        {
+          "text": "iOS",
+          "description": "Operační systém"
+        },
+        {
+          "text": "iOS 13",
+          "description": "Verze operačního systému"
+        },
+        {
+          "text": "3072 MB",
+          "description": "Paměť RAM"
+        },
+        {
+          "text": "64 GB",
+          "description": "Uživatelská paměť"
+        },
+        {
+          "text": "4.7 \"",
+          "description": "Velikost displeje"
+        }
+      ],
+      "tags": {
+        "os": [
+          {
+            "id": 2,
+            "value": "ios"
+          }
+        ],
+        "hdd": [
+          {
+            "id": 1,
+            "value": "64"
+          }
+        ],
+        "brand": [
+          {
+            "id": 2,
+            "value": "apple"
+          }
+        ]
+      },
+      "shopsCount": 39,
+      "url": "https://m.heureka.cz/mobilni-telefony/apple-iphone-se-2020-64gb/",
+      "rating": 91,
+      "topBadge": 3
+    },
+    {
+      "id": 4,
+      "name": "Apple iPhone 11 64GB",
+      "price": 18073,
+      "imageUrl": "https://im9.cz/iR/importprodukt-orig/21b/21bc1b428bf2575e47fdddf04343bf14--mmf400x400.jpg",
+      "description": "Opět lepší než minule – jedenáctá generace nabídne promyšlenou fotosoustavu s úchvatným nočním režimem, nový, zářivější displej, výkonnější procesor a maximálně odolné tělo.",
+      "attributes": [
+        {
+          "text": "dotykové",
+          "description": "Konstrukce"
+        },
+        {
+          "text": "iOS",
+          "description": "Operační systém"
+        },
+        {
+          "text": "iOS 13",
+          "description": "Verze operačního systému"
+        },
+        {
+          "text": "4096 MB",
+          "description": "Paměť RAM"
+        },
+        {
+          "text": "64 GB",
+          "description": "Uživatelská paměť"
+        },
+        {
+          "text": "6.1 \"",
+          "description": "Velikost displeje"
+        }
+      ],
+      "tags": {
+        "os": [
+          {
+            "id": 2,
+            "value": "ios"
+          }
+        ],
+        "hdd": [
+          {
+            "id": 1,
+            "value": "64"
+          }
+        ],
+        "brand": [
+          {
+            "id": 2,
+            "value": "apple"
+          }
+        ]
+      },
+      "shopsCount": 92,
+      "url": "https://m.heureka.cz/mobilni-telefony/apple-iphone-11-64gb/",
+      "rating": 97,
+      "topBadge": 6
+    },
+    {
+      "id": 5,
+      "name": "Samsung Galaxy A40 A405F Dual SIM",
+      "price": 4790,
+      "imageUrl": "https://im9.cz/iR/importprodukt-orig/293/29341d55a6cc4bfe4be1670e6fdd9a90--mmf400x400.jpg",
+      "description": "Ať už mluvíme o ultraširokoúhlém fotoaparátu, plynulém chodu náročných aplikací nebo o propracovaném displeji, na který se vejde opravdu vše, tento telefon má co nabídnout.",
+      "attributes": [
+        {
+          "text": "dotykové",
+          "description": "Konstrukce"
+        },
+        {
+          "text": "Android",
+          "description": "Operační systém"
+        },
+        {
+          "text": "Android 9.0 (Pie)",
+          "description": "Verze operačního systému"
+        },
+        {
+          "text": "4096 MB",
+          "description": "Paměť RAM"
+        },
+        {
+          "text": "64 GB",
+          "description": "Uživatelská paměť"
+        },
+        {
+          "text": "5.9 \"",
+          "description": "Velikost displeje"
+        }
+      ],
+      "tags": {
+        "os": [
+          {
+            "id": 1,
+            "value": "android"
+          }
+        ],
+        "hdd": [
+          {
+            "id": 1,
+            "value": "64"
+          }
+        ],
+        "brand": [
+          {
+            "id": 3,
+            "value": "samsung"
+          }
+        ]
+      },
+      "shopsCount": 116,
+      "url": "https://m.heureka.cz/mobilni-telefony/samsung-galaxy-a40-a405f-dual-sim/",
+      "rating": 91,
+      "topBadge": 7
+    },
+    {
+      "id": 6,
+      "name": "Samsung Galaxy S10e G970F 128GB",
+      "price": 12990,
+      "imageUrl": "https://im9.cz/iR/importprodukt-orig/393/393633b83c911d97aab64d87fd149f5e--mmf400x400.jpg",
+      "description": "Objevujte dosud nepoznané. Nový model Samsung řady Galaxy vám nabídne vysoce chytrou a pokročilou technologii, jejíž součástí je pokročilý duální fotoaparát a bezdrátové nabíjení.",
+      "attributes": [
+        {
+          "text": "dotykové",
+          "description": "Konstrukce"
+        },
+        {
+          "text": "Android",
+          "description": "Operační systém"
+        },
+        {
+          "text": "Android 9.0 (Pie)",
+          "description": "Verze operačního systému"
+        },
+        {
+          "text": "6144 MB",
+          "description": "Paměť RAM"
+        },
+        {
+          "text": "128 GB",
+          "description": "Uživatelská paměť"
+        },
+        {
+          "text": "5.8 \"",
+          "description": "Velikost displeje"
+        }
+      ],
+      "tags": {
+        "os": [
+          {
+            "id": 1,
+            "value": "android"
+          }
+        ],
+        "hdd": [
+          {
+            "id": 1,
+            "value": "64"
+          },
+          {
+            "id": 2,
+            "value": "128"
+          }
+        ],
+        "brand": [
+          {
+            "id": 3,
+            "value": "samsung"
+          }
+        ]
+      },
+      "shopsCount": 15,
+      "url": "https://m.heureka.cz/mobilni-telefony/samsung-galaxy-s10e-g970f-128gb/",
+      "rating": 94,
+      "topBadge": 8
+    },
+    {
+      "id": 7,
+      "name": "Samsung Galaxy S10 G973F 128GB",
+      "price": 14062,
+      "imageUrl": "https://im9.cz/iR/importprodukt-orig/9e5/9e52549aec3f0fafd939f4dcca9ff7aa--mmf400x400.jpg",
+      "description": "Galaxy S10 nabízí svým uživatelům nejnovější mobilní technologie. Uchvátí vás fotoaparáty se 4 objektivy, AMOLED displej nové generace i to, jak dokáže být telefon inteligentní. ",
+      "attributes": [
+        {
+          "text": "dotykové",
+          "description": "Konstrukce"
+        },
+        {
+          "text": "Android",
+          "description": "Operační systém"
+        },
+        {
+          "text": "Android 9.0 (Pie)",
+          "description": "Verze operačního systému"
+        },
+        {
+          "text": "8192 MB",
+          "description": "Paměť RAM"
+        },
+        {
+          "text": "128 GB",
+          "description": "Uživatelská paměť"
+        },
+        {
+          "text": "6.1 \"",
+          "description": "Velikost displeje"
+        }
+      ],
+      "tags": {
+        "os": [
+          {
+            "id": 1,
+            "value": "android"
+          }
+        ],
+        "hdd": [
+          {
+            "id": 1,
+            "value": "64"
+          },
+          {
+            "id": 2,
+            "value": "128"
+          }
+        ],
+        "brand": [
+          {
+            "id": 3,
+            "value": "samsung"
+          }
+        ]
+      },
+      "shopsCount": 100,
+      "url": "https://m.heureka.cz/mobilni-telefony/samsung-galaxy-s10-g973f-128gb/",
+      "rating": 95,
+      "topBadge": 9
+    },
+    {
+      "id": 8,
+      "name": "Apple iPhone XS 64GB",
+      "price": 16240,
+      "imageUrl": "https://im9.cz/iR/importprodukt-orig/103/10337cd67bbb1b38071ee32443ae7542--mmf400x400.jpg",
+      "description": "Poznejte jemný displej zářící barvami zasazený do odolného těla ze skla a chirurgické oceli, super výkonný čip A12 Bionic, přelomový duální fotoaparát či rychlejší Face ID.",
+      "attributes": [
+        {
+          "text": "dotykové",
+          "description": "Konstrukce"
+        },
+        {
+          "text": "iOS",
+          "description": "Operační systém"
+        },
+        {
+          "text": "iOS 12",
+          "description": "Verze operačního systému"
+        },
+        {
+          "text": "4096 MB",
+          "description": "Paměť RAM"
+        },
+        {
+          "text": "64 GB",
+          "description": "Uživatelská paměť"
+        },
+        {
+          "text": "5.8 \"",
+          "description": "Velikost displeje"
+        }
+      ],
+      "tags": {
+        "os": [
+          {
+            "id": 2,
+            "value": "ios"
+          }
+        ],
+        "hdd": [
+          {
+            "id": 1,
+            "value": "64"
+          }
+        ],
+        "brand": [
+          {
+            "id": 2,
+            "value": "apple"
+          }
+        ]
+      },
+      "shopsCount": 66,
+      "url": "https://m.heureka.cz/mobilni-telefony/apple-iphone-xs-64gb/",
+      "rating": 97,
+      "topBadge": 10
+    },
+    {
+      "id": 9,
+      "name": "Samsung Galaxy A51 A515F Dual SIM",
+      "price": 7290,
+      "imageUrl": "https://im9.cz/iR/importprodukt-orig/7f8/7f8d558aecb52c9f0bdcbde2b07b76ca--mmf400x400.jpg",
+      "description": "Maximální displej, fotoaparát se čtyřmi objektivy, asistent Bixby a špičkové zabezpečení. To je jen krátký přehled toho, co vám tento pohledný telefon může nabídnout.",
+      "attributes": [
+        {
+          "text": "dotykové",
+          "description": "Konstrukce"
+        },
+        {
+          "text": "Android",
+          "description": "Operační systém"
+        },
+        {
+          "text": "Android 10",
+          "description": "Verze operačního systému"
+        },
+        {
+          "text": "4096 MB",
+          "description": "Paměť RAM"
+        },
+        {
+          "text": "128 GB",
+          "description": "Uživatelská paměť"
+        },
+        {
+          "text": "6.5 \"",
+          "description": "Velikost displeje"
+        }
+      ],
+      "tags": {
+        "os": [
+          {
+            "id": 1,
+            "value": "android"
+          }
+        ],
+        "hdd": [
+          {
+            "id": 1,
+            "value": "64"
+          },
+          {
+            "id": 2,
+            "value": "128"
+          }
+        ],
+        "brand": [
+          {
+            "id": 3,
+            "value": "samsung"
+          }
+        ]
+      },
+      "shopsCount": 107,
+      "url": "https://m.heureka.cz/mobilni-telefony/samsung-galaxy-a51-a515f-dual-sim/",
+      "rating": 93,
+      "topBadge": 11
+    },
+    {
+      "id": 10,
+      "name": "Honor 20 Pro",
+      "price": 9966,
+      "imageUrl": "https://im9.cz/iR/importprodukt-orig/83d/83d6f3459676324891c028e68e1ee228--mmf400x400.jpg",
+      "description": "Nádherný chytrý telefon s profesionálním fotoaparátem se čtyřmi objektivy, který zvládne cokoli. Objevujte, foťte, poslouchejte, hrajte nebo sledujte v maximální kvalitě.",
+      "attributes": [
+        {
+          "text": "dotykové",
+          "description": "Konstrukce"
+        },
+        {
+          "text": "Android",
+          "description": "Operační systém"
+        },
+        {
+          "text": "Android 9.0 (Pie)",
+          "description": "Verze operačního systému"
+        },
+        {
+          "text": "8192 MB",
+          "description": "Paměť RAM"
+        },
+        {
+          "text": "256 GB",
+          "description": "Uživatelská paměť"
+        },
+        {
+          "text": "6.26 \"",
+          "description": "Velikost displeje"
+        }
+      ],
+      "tags": {
+        "os": [
+          {
+            "id": 1,
+            "value": "android"
+          }
+        ],
+        "hdd": [
+          {
+            "id": 1,
+            "value": "64"
+          },
+          {
+            "id": 2,
+            "value": "128"
+          },
+          {
+            "id": 3,
+            "value": "256"
+          }
+        ],
+        "brand": [
+          {
+            "id": 4,
+            "value": "honor"
+          }
+        ]
+      },
+      "shopsCount": 76,
+      "url": "https://m.heureka.cz/mobilni-telefony/honor-20-pro/",
+      "rating": 96,
+      "topBadge": 13
+    },
+    {
+      "id": 11,
+      "name": "Apple iPhone 11 Pro 64GB",
+      "price": 24790,
+      "imageUrl": "https://im9.cz/iR/importprodukt-orig/8d5/8d5cee44d52aa82df824da97c58c5eb6--mmf400x400.jpg",
+      "description": "Revoluce v mobilní fotografii. Tou je iPhone 11 s přízviskem Pro, který nabízí profesionální trojitou fotosoustavu, bezprecedentní výkon, dechberoucí displej a vynikající výdrž.",
+      "attributes": [
+        {
+          "text": "dotykové",
+          "description": "Konstrukce"
+        },
+        {
+          "text": "iOS",
+          "description": "Operační systém"
+        },
+        {
+          "text": "iOS 13",
+          "description": "Verze operačního systému"
+        },
+        {
+          "text": "4096 MB",
+          "description": "Paměť RAM"
+        },
+        {
+          "text": "64 GB",
+          "description": "Uživatelská paměť"
+        },
+        {
+          "text": "5.8 \"",
+          "description": "Velikost displeje"
+        }
+      ],
+      "tags": {
+        "os": [
+          {
+            "id": 2,
+            "value": "ios"
+          }
+        ],
+        "hdd": [
+          {
+            "id": 1,
+            "value": "64"
+          }
+        ],
+        "brand": [
+          {
+            "id": 2,
+            "value": "apple"
+          }
+        ]
+      },
+      "shopsCount": 92,
+      "url": "https://m.heureka.cz/mobilni-telefony/apple-iphone-11-pro-64gb/",
+      "rating": 97,
+      "topBadge": 14
+    },
+    {
+      "id": 12,
+      "name": "Xiaomi Redmi Note 7 4GB/64GB",
+      "price": 4450,
+      "imageUrl": "https://im9.cz/iR/importprodukt-orig/cf3/cf3de7af94492f0d4f1ab26b47f7833e--mmf400x400.jpg",
+      "description": "Xiaomi Redmi Note 7 nabízí ideální poměr ceny a výkonu. Kromě 6,3\" displeje, velké výdrže, 8jádrového procesoru a USB-C láká také na 48MPx duální fotoaparát s umělou inteligencí. ",
+      "attributes": [
+        {
+          "text": "dotykové",
+          "description": "Konstrukce"
+        },
+        {
+          "text": "Android",
+          "description": "Operační systém"
+        },
+        {
+          "text": "Android 9.0 (Pie)",
+          "description": "Verze operačního systému"
+        },
+        {
+          "text": "4096 MB",
+          "description": "Paměť RAM"
+        },
+        {
+          "text": "64 GB",
+          "description": "Uživatelská paměť"
+        },
+        {
+          "text": "6.3 \"",
+          "description": "Velikost displeje"
+        }
+      ],
+      "tags": {
+        "os": [
+          {
+            "id": 1,
+            "value": "android"
+          }
+        ],
+        "hdd": [
+          {
+            "id": 1,
+            "value": "64"
+          }
+        ],
+        "brand": [
+          {
+            "id": 1,
+            "value": "xiaomi"
+          }
+        ]
+      },
+      "shopsCount": 9,
+      "url": "https://m.heureka.cz/mobilni-telefony/xiaomi-redmi-note-7-4gb-64gb/",
+      "rating": 95,
+      "topBadge": 15
+    },
+    {
+      "id": 13,
+      "name": "Samsung Galaxy A50 A505F 4GB/128GB Dual SIM",
+      "price": 6995,
+      "imageUrl": "https://im9.cz/iR/importprodukt-orig/e68/e68f6f04de4360b65c0621df2b2e415f--mmf400x400.jpg",
+      "description": "Užijte si smartphone s perfektním displejem, trojitým fotoaparátem, dlouhou životností baterie, nadprůměrnou kapacitou úložiště a inovativním hlasovým ovládáním.",
+      "attributes": [
+        {
+          "text": "dotykové",
+          "description": "Konstrukce"
+        },
+        {
+          "text": "Android",
+          "description": "Operační systém"
+        },
+        {
+          "text": "Android 9.0 (Pie)",
+          "description": "Verze operačního systému"
+        },
+        {
+          "text": "4096 MB",
+          "description": "Paměť RAM"
+        },
+        {
+          "text": "128 GB",
+          "description": "Uživatelská paměť"
+        },
+        {
+          "text": "6.4 \"",
+          "description": "Velikost displeje"
+        }
+      ],
+      "tags": {
+        "os": [
+          {
+            "id": 1,
+            "value": "android"
+          }
+        ],
+        "hdd": [
+          {
+            "id": 1,
+            "value": "64"
+          },
+          {
+            "id": 2,
+            "value": "128"
+          }
+        ],
+        "brand": [
+          {
+            "id": 3,
+            "value": "samsung"
+          }
+        ]
+      },
+      "shopsCount": 14,
+      "url": "https://m.heureka.cz/mobilni-telefony/samsung-galaxy-a50-a505f-4gb-128gb-dual-sim/",
+      "rating": 92,
+      "topBadge": 16
+    },
+    {
+      "id": 14,
+      "name": "Samsung Galaxy S20 G980F 8GB/128GB Dual SIM",
+      "price": 18490,
+      "imageUrl": "https://im9.cz/iR/importprodukt-orig/62c/62ce90d453738844e78660d3e2ffab36--mmf400x400.jpg",
+      "description": "Výkonný smartphone, jehož největší předností je špičkově vybavený fotoaparát. Objevte nekonečný svět příběhů, které jsou ukryty v nepatrných detailech na vašich fotografiích.",
+      "attributes": [
+        {
+          "text": "dotykové",
+          "description": "Konstrukce"
+        },
+        {
+          "text": "Android",
+          "description": "Operační systém"
+        },
+        {
+          "text": "Android 10",
+          "description": "Verze operačního systému"
+        },
+        {
+          "text": "8192 MB",
+          "description": "Paměť RAM"
+        },
+        {
+          "text": "128 GB",
+          "description": "Uživatelská paměť"
+        },
+        {
+          "text": "6.2 \"",
+          "description": "Velikost displeje"
+        }
+      ],
+      "tags": {
+        "os": [
+          {
+            "id": 1,
+            "value": "android"
+          }
+        ],
+        "hdd": [
+          {
+            "id": 1,
+            "value": "64"
+          },
+          {
+            "id": 2,
+            "value": "128"
+          }
+        ],
+        "brand": [
+          {
+            "id": 3,
+            "value": "samsung"
+          }
+        ]
+      },
+      "shopsCount": 96,
+      "url": "https://m.heureka.cz/mobilni-telefony/samsung-galaxy-s20-g980f-8gb-128gb-dual-sim/",
+      "rating": 97,
+      "topBadge": 17
+    },
+    {
+      "id": 15,
+      "name": "Huawei P30 Pro 6GB/128GB Dual SIM",
+      "price": 13400,
+      "imageUrl": "https://im9.cz/iR/importprodukt-orig/ae1/ae1b530db46a539f14af172dc93799c8--mmf400x400.jpg",
+      "description": "Huawei P30 Pro s dvojitě zakřiveným 3D skleněným tělem je ztělesněním naprosté elegance. Disponuje systémem čtyřnásobného fotoaparátu Leica a je odolný vůči prachu a vodě. ",
+      "attributes": [
+        {
+          "text": "dotykové",
+          "description": "Konstrukce"
+        },
+        {
+          "text": "Android",
+          "description": "Operační systém"
+        },
+        {
+          "text": "Android 9.0 (Pie)",
+          "description": "Verze operačního systému"
+        },
+        {
+          "text": "6144 MB",
+          "description": "Paměť RAM"
+        },
+        {
+          "text": "128 GB",
+          "description": "Uživatelská paměť"
+        },
+        {
+          "text": "6.47 \"",
+          "description": "Velikost displeje"
+        }
+      ],
+      "tags": {
+        "os": [
+          {
+            "id": 1,
+            "value": "android"
+          }
+        ],
+        "hdd": [
+          {
+            "id": 1,
+            "value": "64"
+          },
+          {
+            "id": 2,
+            "value": "128"
+          }
+        ],
+        "brand": [
+          {
+            "id": 5,
+            "value": "huawei"
+          }
+        ]
+      },
+      "shopsCount": 76,
+      "url": "https://m.heureka.cz/mobilni-telefony/huawei-p30-pro-6gb-128gb-dual-sim/",
+      "rating": 95,
+      "topBadge": 18
+    }
+  ]
+}
