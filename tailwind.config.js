@@ -17,6 +17,9 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
     },
+    borderColor: (theme) => ({
+      DEFAULT: '#ccc',
+    }),
     extend: {
       colors: {
         primary: '#009dd3',

@@ -21,6 +21,7 @@ const FilterCategory: React.FC<FilterCategoryProps> = ({ name, children }) => (
 
 export const Filter: React.FC<FilterProps> = ({ filters }) => {
   const router = useRouter()
+  const { page, sort, ...queryFilter } = router.query
   const { register, watch, setValue } = useForm()
   const { brand, os } = filters
   const allFields = watch()
@@ -39,17 +40,17 @@ export const Filter: React.FC<FilterProps> = ({ filters }) => {
 
   // Apply filters from URL
   useEffect(() => {
-    const query = router.query as Record<string, string>
-    for (const el in query) {
-      query[el]?.split(',').map((field) => setValue(field, true))
+    const filters = queryFilter as Record<string, string>
+    for (const el in filters) {
+      filters[el]?.split(',').map((field) => setValue(field, true))
     }
-  }, [router, setValue])
+  }, [])
 
   // Set URL from filters
   useEffect(() => {
-    !isEqual(router.query, activeFilter) &&
+    !isEqual(queryFilter, activeFilter) &&
       router.push({ pathname: '/', query: activeFilter })
-  }, [router, activeFilter])
+  }, [activeFilter, router, queryFilter])
 
   return (
     <aside className="min-w-200">

@@ -11,7 +11,6 @@ mockData.products.forEach((prod) => {
     (attr) => attr.description === 'Operační systém'
   )
   osAttribute && os.add(osAttribute.text)
-
   prod.tags.brand.forEach((b) => brands.add(b.value))
 })
 
@@ -25,26 +24,26 @@ export default function handler(
   res: NextApiResponse<Data>
 ) {
   const query = req.query as Record<string, string>
+  const { sort, page, ...filter } = query
 
-  const filterExists = Object.keys(query).every((filter) =>
+  let products = mockData.products
+  const filterExists = Object.keys(filter).every((filter) =>
     Object.keys(filters).includes(filter)
   )
 
-  let filteredProducts = mockData.products
+  if (!isEmpty(filter) && filterExists) {
+    if ('brand' in filter) {
+      const brandFilters = filter.brand.split(',')
 
-  if (!isEmpty(query) && filterExists) {
-    if ('brand' in query) {
-      const brandFilters = query.brand.split(',')
-
-      filteredProducts = filteredProducts.filter((prod) =>
+      products = products.filter((prod) =>
         brandFilters.some((f) => f === prod.tags.brand[0].value)
       )
     }
 
-    if ('os' in query) {
-      const osFilters = query.os.split(',')
+    if ('os' in filter) {
+      const osFilters = filter.os.split(',')
 
-      filteredProducts = filteredProducts?.filter((prod) => {
+      products = products?.filter((prod) => {
         const osAttribute = prod.attributes.find(
           (attr) => attr.description === 'Operační systém'
         )
@@ -54,9 +53,16 @@ export default function handler(
     }
   }
 
+  if (sort === 'pdesc' || sort === 'pasc') {
+    products.sort((a, b) =>
+      sort === 'pasc' ? a.price - b.price : b.price - a.price
+    )
+  }
+
   const data = {
-    products: filteredProducts,
+    products,
     filters,
   }
-  res.status(200).json(data)
+
+  return res.status(200).json(data)
 }
