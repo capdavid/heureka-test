@@ -1,18 +1,26 @@
 import React from 'react'
-import useSWR from 'swr'
-import { Data } from '../data/types'
+import { Product } from '../data/types'
 import { ProductDetail } from 'components'
 
-interface ProductListProps {}
+interface ProductListProps {
+  products: Product[]
+}
 
-export const ProductList: React.FC<ProductListProps> = () => {
-  const fetcher = (url: string) => fetch(url).then((res) => res.json())
-  const { data, error } = useSWR<Data>('/api/data', fetcher)
+export const ProductList: React.FC<ProductListProps> = ({ products }) => {
   return (
-    <section>
-      {data?.products.map((product) => (
-        <ProductDetail key={product.id} product={product} />
-      ))}
+    <section className="flex-grow flex-col justify-center flex items-center mx-10">
+      <h1 className="text-22 font-semibold self-start mb-2">
+        Mobilní telefony
+      </h1>
+      {products.length ? (
+        products.map((product) => (
+          <ProductDetail key={product.id} product={product} />
+        ))
+      ) : (
+        <span className="text-16 font-semibold">
+          Vašemu dotazu neodpovídají žádné výsledky.
+        </span>
+      )}
     </section>
   )
 }

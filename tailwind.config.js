@@ -25,6 +25,9 @@ module.exports = {
       flex: {
         2: '2 2 0%',
       },
+      minWidth: {
+        200: '200px',
+      },
     },
   },
   variants: {

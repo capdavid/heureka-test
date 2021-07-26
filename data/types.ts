@@ -1,5 +1,6 @@
 export interface Data {
   products: Product[]
+  filters: Record<string, string[]>
 }
 
 export interface Product {
