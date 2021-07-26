@@ -67,12 +67,6 @@ export default function handler(
   const paginationPossible =
     +page > 0 && products.length - (+page - 1) * pageLimit > 0
 
-  if (paginationPossible) {
-    products = products.slice((+page - 1) * pageLimit, +page * pageLimit)
-  } else {
-    products = products.slice(0, 1 * pageLimit)
-  }
-
   const pageInfo: PageInfo = {
     currentPage: paginationPossible ? +page : 1,
     pages: Array.from(
@@ -80,6 +74,12 @@ export default function handler(
       (_, i) => i + 1
     ),
     totalCount: products.length,
+  }
+
+  if (paginationPossible) {
+    products = products.slice((+page - 1) * pageLimit, +page * pageLimit)
+  } else {
+    products = products.slice(0, 1 * pageLimit)
   }
 
   const data = {
