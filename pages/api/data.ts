@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import mockData from 'data/mockData.json'
-import { Data } from 'data/types'
+import { Data, PageInfo } from 'data/types'
 import isEmpty from 'lodash/isEmpty'
 
 const brands = new Set<string>()
@@ -27,6 +27,8 @@ export default function handler(
   const { sort, page, ...filter } = query
 
   let products = mockData.products
+
+  // filters
   const filterExists = Object.keys(filter).every((filter) =>
     Object.keys(filters).includes(filter)
   )
@@ -53,15 +55,37 @@ export default function handler(
     }
   }
 
+  // sorting
   if (sort === 'pdesc' || sort === 'pasc') {
     products.sort((a, b) =>
       sort === 'pasc' ? a.price - b.price : b.price - a.price
     )
   }
 
+  // pagination
+  const pageLimit = 6
+  const paginationPossible =
+    +page > 0 && products.length - (+page - 1) * pageLimit > 0
+
+  if (paginationPossible) {
+    products = products.slice((+page - 1) * pageLimit, +page * pageLimit)
+  } else {
+    products = products.slice(0, 1 * pageLimit)
+  }
+
+  const pageInfo: PageInfo = {
+    currentPage: paginationPossible ? +page : 1,
+    pages: Array.from(
+      { length: Math.ceil(products.length / pageLimit) },
+      (_, i) => i + 1
+    ),
+    totalCount: products.length,
+  }
+
   const data = {
     products,
     filters,
+    pageInfo,
   }
 
   return res.status(200).json(data)

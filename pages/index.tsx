@@ -1,13 +1,15 @@
 import Head from 'next/head'
 import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next'
-import { Filter, ProductList } from 'containers'
+import { Filter, Pagination, Sorting } from 'containers'
+import { ProductList } from 'components'
 import { Data } from '../data/types'
 import qs from 'qs'
 
 export default function Home({
   data,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
-  const { products, filters } = data
+  const { products, filters, pageInfo } = data
+
   return (
     <>
       <Head>
@@ -18,9 +20,23 @@ export default function Home({
       <main className="container mx-auto">
         {!data && <span>Loading...</span>}
         {data && (
-          <div className="flex pb-80 mt-20 w-full">
+          <div className="flex pb-80 mt-20 w-full items-baseline">
             <Filter filters={filters} />
-            <ProductList products={products} />
+
+            <div className="flex-grow flex flex-col mx-10">
+              <h1 className="text-22 font-semibold mb-4">Mobilní telefony</h1>
+              <Sorting />
+              {data.products.length ? (
+                <>
+                  <ProductList products={products} />
+                  <Pagination pageInfo={pageInfo} />
+                </>
+              ) : (
+                <span className="text-16 font-semibold mt-40 self-center">
+                  Vašemu dotazu neodpovídají žádné výsledky.
+                </span>
+              )}
+            </div>
           </div>
         )}
       </main>

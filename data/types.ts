@@ -1,8 +1,14 @@
 export interface Data {
   products: Product[]
   filters: Record<string, string[]>
+  pageInfo: PageInfo
 }
 
+export interface PageInfo {
+  currentPage: number
+  pages: number[]
+  totalCount: number
+}
 export interface Product {
   id: number
   name: string

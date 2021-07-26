@@ -20,7 +20,7 @@ export const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
     shopsCount,
   } = product
   return (
-    <article className="flex py-6 border-b last:border-0 items-center">
+    <article className="flex py-6 border-b last:border-b-0 items-center">
       <div className="flex-1 flex justify-center">
         <Image
           objectFit="cover"

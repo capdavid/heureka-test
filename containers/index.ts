@@ -1,2 +1,3 @@
 export * from './Filter'
-export * from './ProductList'
+export * from './Pagination'
+export * from './Sorting'

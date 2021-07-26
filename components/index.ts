@@ -1,5 +1,6 @@
 export * from './ProductDetail'
 export * from './ProductDescription'
+export * from './ProductList'
 export * from './Button'
 export * from './Badge'
 export * from './Checkbox'
