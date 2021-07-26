@@ -49,7 +49,7 @@ export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
   // TODO hostname in env
   // TODO error handling
   const data: Data = await fetch(
-    `http://localhost:3000/api/data?${query}`
+    `${process.env.NEXT_PUBLIC_HOST}/api/data?${query}`
   ).then((res) => res.json())
   return { props: { data } }
 }
