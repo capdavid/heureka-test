@@ -14,12 +14,12 @@ export const Pagination: React.FC<PaginationProps> = ({ pageInfo }) => {
 
   const router = useRouter()
   const { page, ...routerQuery } = router.query
-  const query = qs.stringify(routerQuery)
+  const query = routerQuery ? qs.stringify(routerQuery) + '&' : ''
 
   return (
     <section className="self-center">
       {pages.map((page) => (
-        <Link key={page} href={`/?${query}&page=${page}`}>
+        <Link key={page} href={`/?${query}page=${page}`}>
           <a
             className={cn(
               'px-2',
