@@ -11,9 +11,9 @@ interface FilterCategoryProps {
 }
 
 const FilterCategory: React.FC<FilterCategoryProps> = ({ name, children }) => (
-  <div className="border-b py-2">
+  <div className="border-b pt-2 pb-4">
     <h4 className="text-16 font-semibold">{name}</h4>
-    <fieldset className="flex flex-col">{children}</fieldset>
+    <fieldset className="flex sm:flex-col flex-wrap">{children}</fieldset>
   </div>
 )
 
@@ -23,7 +23,7 @@ export const Filter: React.FC<FilterProps> = ({ filters }) => {
   const { brand, os } = filters
 
   return (
-    <aside className="min-w-200">
+    <aside className="w-full sm:w-auto min-w-150 lg:min-w-200">
       <h3 className="text-18 font-semibold border-b">Filtrování</h3>
 
       <FilterCategory name="Výrobce">
@@ -40,13 +40,7 @@ export const Filter: React.FC<FilterProps> = ({ filters }) => {
 
       <FilterCategory name="Operační systém">
         {os.map((os) => (
-          <Checkbox
-            routerQuery={routerQuery}
-            name={os}
-            key={os}
-            type="os"
-            capitalize
-          />
+          <Checkbox routerQuery={routerQuery} name={os} key={os} type="os" />
         ))}
       </FilterCategory>
     </aside>

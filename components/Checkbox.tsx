@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import cn from 'classnames'
+
 interface CheckboxProps {
   type: string
   name: string
@@ -31,13 +32,12 @@ export const Checkbox: React.FC<CheckboxProps> = ({
 
   return (
     <Link href={{ pathname: '/', query }} passHref>
-      <a>
-        <label
-          htmlFor={name}
-          className={cn('my-1', capitalize && 'capitalize')}
-        >
+      <a
+        className={cn('sm:mx-0 sm:my-0 mx-1 my-1', capitalize && 'capitalize')}
+      >
+        <label htmlFor={name} className="my-1">
           <input
-            className="mr-2 w-5 h-5 align-middle"
+            className="mr-1 sm:mr-2 w-5 h-5 align-middle"
             type="checkbox"
             id={name}
             name={name}

@@ -17,14 +17,19 @@ export default function Home({
         <meta name="description" content="Mobilní telefony - srovnávač cen" />
       </Head>
 
-      <main className="container mx-auto">
+      <main className="max-w-1280 mx-auto px-4 md:px-8">
         {!data && <span>Loading...</span>}
         {data && (
-          <div className="flex pb-80 mt-20 w-full items-baseline">
+          <div className="flex flex-col sm:flex-row pb-60 mt-4 sm:mt-20 w-full items-baseline">
+            <h1 className="text-22 font-semibold mb-4 sm:hidden block">
+              Mobilní telefony
+            </h1>
             <Filter filters={filters} />
 
-            <div className="flex-grow flex flex-col mx-10">
-              <h1 className="text-22 font-semibold mb-4">Mobilní telefony</h1>
+            <div className="flex-grow flex flex-col mx-0 sm:mx-10">
+              <h1 className="text-22 font-semibold mb-4 hidden sm:block">
+                Mobilní telefony
+              </h1>
               <Sorting />
               {data.products.length ? (
                 <>
@@ -46,7 +51,6 @@ export default function Home({
 
 export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
   const query = qs.stringify(ctx.query)
-  // TODO hostname in env
   // TODO error handling
   const data: Data = await fetch(
     `${process.env.NEXT_PUBLIC_HOST}/api/data?${query}`

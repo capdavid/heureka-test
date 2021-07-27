@@ -30,30 +30,34 @@ export const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
           width={200}
         />
       </div>
-      <div className="flex flex-col space-y-2 flex-2 overflow-hidden">
-        {topBadge && <Badge>{`TOP ${topBadge}`}</Badge>}
-        <Link href="#">
-          <a className="text-16 font-medium underline hover:text-primary">
-            {name}
-          </a>
-        </Link>
-        <span className="text-primary text-14 font-semibold">{rating} %</span>
-        <span className="font-semibold text-14">
-          {attributes.map(
-            (attr, i, arr) => attr.text + (i + 1 < arr.length ? ', ' : '')
-          )}
-        </span>
-        <ProductDescription>{description}</ProductDescription>
-      </div>
-      <div className="flex-1 flex justify-center">
-        <div className="flex flex-col">
-          <span className="font-semibold text-16">
-            {price.toLocaleString('cs-CZ')} Kč
+
+      <div className="flex-3 flex flex-col md:flex-row md:items-center">
+        <div className="flex flex-col space-y-2 flex-2 overflow-hidden md:mr-2">
+          {topBadge && <Badge>{`TOP ${topBadge}`}</Badge>}
+          <Link href="#">
+            <a className="text-16 font-semibold underline hover:text-primary">
+              {name}
+            </a>
+          </Link>
+          <span className="text-primary text-14 font-semibold">{rating} %</span>
+          <span className="font-semibold text-14">
+            {attributes.map(
+              (attr, i, arr) => attr.text + (i + 1 < arr.length ? ', ' : '')
+            )}
           </span>
-          <span className="text-12 underline">v {shopsCount} obchodech</span>
-          <Button to="#" className="bg-primary text-white">
-            Porovnat ceny
-          </Button>
+          <ProductDescription>{description}</ProductDescription>
+        </div>
+
+        <div className="flex-1 flex flex-shrink-0 md:justify-center mt-2 md:mt-0">
+          <div className="flex flex-col">
+            <span className="font-semibold text-16">
+              {price.toLocaleString('cs-CZ')} Kč
+            </span>
+            <span className="text-12 underline">v {shopsCount} obchodech</span>
+            <Button to="#" className="bg-primary text-white">
+              Porovnat ceny
+            </Button>
+          </div>
         </div>
       </div>
     </article>

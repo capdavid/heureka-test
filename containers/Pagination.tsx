@@ -22,7 +22,7 @@ export const Pagination: React.FC<PaginationProps> = ({ pageInfo }) => {
         <Link key={page} href={`/?${query}page=${page}`}>
           <a
             className={cn(
-              'px-2',
+              'px-2 text-18',
               currentPage === page
                 ? 'text-black font-semibold cursor-default'
                 : 'hover:underline text-primary'
