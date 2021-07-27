@@ -2,6 +2,9 @@ module.exports = {
   purge: ['./**/*.{ts,tsx}'],
   darkMode: false,
   theme: {
+    fontFamily: {
+      body: "Source Sans Pro, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+    },
     fontSize: {
       10: ['10px', '10px'],
       12: ['12px', '12px'],
