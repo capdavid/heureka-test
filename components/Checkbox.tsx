@@ -1,30 +1,52 @@
-import React, { forwardRef } from 'react'
-import { ChangeHandler } from 'react-hook-form'
-
+import React from 'react'
+import Link from 'next/link'
+import cn from 'classnames'
 interface CheckboxProps {
-  label: React.ReactNode
+  type: string
   name: string
-  onChange: ChangeHandler
-  onBlur: ChangeHandler
+  capitalize?: boolean
+  routerQuery: Record<string, string | string[] | undefined>
 }
 
-export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
-  ({ name, label, onChange, onBlur }, ref) => {
-    return (
-      <>
-        <label htmlFor={name} className="my-1">
+export const Checkbox: React.FC<CheckboxProps> = ({
+  type,
+  name,
+  capitalize,
+  routerQuery,
+}) => {
+  const { [type]: _, ...queryWithoutCategory } = routerQuery
+
+  const categoryFilter =
+    type in routerQuery ? (routerQuery[type] as string).split(',') : []
+
+  const checked = categoryFilter.includes(name)
+
+  const filter = checked
+    ? categoryFilter.filter((el) => el !== name)
+    : [...categoryFilter, name]
+
+  const query = filter.length
+    ? { ...routerQuery, [type]: filter.join(',') }
+    : queryWithoutCategory
+
+  return (
+    <Link href={{ pathname: '/', query }} passHref>
+      <a>
+        <label
+          htmlFor={name}
+          className={cn('my-1', capitalize && 'capitalize')}
+        >
           <input
             className="mr-2 w-5 h-5 align-middle"
             type="checkbox"
             id={name}
             name={name}
-            ref={ref}
-            onChange={onChange}
-            onBlur={onBlur}
+            checked={checked}
+            readOnly
           />
-          {label}
         </label>
-      </>
-    )
-  }
-)
+        {name}
+      </a>
+    </Link>
+  )
+}
