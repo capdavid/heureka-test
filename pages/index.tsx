@@ -7,9 +7,8 @@ import qs from 'qs'
 
 export default function Home({
   data,
+  error,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
-  const { products, filters, pageInfo } = data
-
   return (
     <>
       <Head>
@@ -18,13 +17,18 @@ export default function Home({
       </Head>
 
       <main className="max-w-1280 mx-auto px-4 md:px-8">
-        {!data && <span>Loading...</span>}
+        {error && (
+          <div className="h-screen flex justify-center items-center">
+            Došlo k chybě, zkuste to prosím znovu.
+          </div>
+        )}
+        {!data && !error && <span>Loading...</span>}
         {data && (
           <div className="flex flex-col sm:flex-row pb-60 mt-4 sm:mt-20 w-full items-baseline">
             <h1 className="text-22 font-semibold mb-4 sm:hidden block">
               Mobilní telefony
             </h1>
-            <Filter filters={filters} />
+            <Filter filters={data.filters} />
 
             <div className="flex-grow flex flex-col mx-0 sm:mx-10">
               <h1 className="text-22 font-semibold mb-4 hidden sm:block">
@@ -33,8 +37,8 @@ export default function Home({
               <Sorting />
               {data.products.length ? (
                 <>
-                  <ProductList products={products} />
-                  <Pagination pageInfo={pageInfo} />
+                  <ProductList products={data.products} />
+                  <Pagination pageInfo={data.pageInfo} />
                 </>
               ) : (
                 <span className="text-16 font-semibold mt-40 self-center">
@@ -51,9 +55,18 @@ export default function Home({
 
 export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
   const query = qs.stringify(ctx.query)
-  // TODO error handling
-  const data: Data = await fetch(
+
+  let error: boolean | number = false
+
+  const data: Data | null = await fetch(
     `${process.env.NEXT_PUBLIC_HOST}/api/data?${query}`
-  ).then((res) => res.json())
-  return { props: { data } }
+  ).then((res) => {
+    if (!res.ok) {
+      error = res.status
+      return null
+    }
+    return res.json()
+  })
+
+  return { props: { error, data } }
 }

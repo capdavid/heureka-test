@@ -62,6 +62,10 @@ export default function handler(
     )
   }
 
+  if (sort === 'top') {
+    products.sort((a, b) => a.topBadge - b.topBadge)
+  }
+
   // pagination
   const pageLimit = 6
   const paginationPossible =
