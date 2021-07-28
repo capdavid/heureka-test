@@ -34,6 +34,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
     <Link href={{ pathname: '/', query }} passHref>
       <a
         className={cn('sm:mx-0 sm:my-0 mx-1 my-1', capitalize && 'capitalize')}
+        tabIndex={-1}
       >
         <label htmlFor={name} className="my-1">
           <input

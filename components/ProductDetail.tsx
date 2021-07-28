@@ -25,7 +25,7 @@ export const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
         <Image
           objectFit="cover"
           src={imageUrl}
-          alt=""
+          alt={name}
           height={200}
           width={200}
         />
